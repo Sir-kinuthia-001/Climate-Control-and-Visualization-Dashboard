@@ -1,0 +1,19 @@
+{
+  "name": "climate-controle-and-visualization-dashboard",
+  "version": "1.0.0",
+  "description": "Climate control system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sir-kinuthia-001/Climate-Controle-and-Visualization-Dashboard.git"
+  },
+  "author": "D. Kinuthia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sir-kinuthia-001/Climate-Controle-and-Visualization-Dashboard/issues"
+  },
+  "homepage": "https://github.com/Sir-kinuthia-001/Climate-Controle-and-Visualization-Dashboard#readme"
+}
