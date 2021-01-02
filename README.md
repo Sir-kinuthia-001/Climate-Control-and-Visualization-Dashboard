@@ -1,2 +1,3 @@
-# Climate-Controle-and-Visualization-Dashboard
- Climate Data visualization and controle Dashbpard for indoor farming
+# Climate-Control-and-Visualization-Dashboard
+ Climate Data visualization and control Dashboard for indoor farming
+ Intergrating IOT to farming.
