@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Sir-kinuthia-001/Climate-Controle-and-Visualization-Dashboard/issues"
   },
-  "homepage": "https://github.com/Sir-kinuthia-001/Climate-Controle-and-Visualization-Dashboard#readme"
+  "homepage": "https://github.com/Sir-kinuthia-001/Climate-Controle-and-Visualization-Dashboard#readme",
+  "dependencies": {
+    "brain.js": "^2.0.0-beta.2",
+    "gpu.js": "^2.10.6",
+    "node-dweetio": "0.0.11",
+    "nodemon": "^2.0.6"
+  }
 }
