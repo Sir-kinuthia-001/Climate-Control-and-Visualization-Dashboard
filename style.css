@@ -1,0 +1,47 @@
+body{
+
+}
+nav{
+position:absolute;
+width: 5%;
+top:2.5%;
+height:95%;
+border-radius:5px;
+border: 2px;
+border-color: black;
+border-style: solid;
+}
+.container-1{
+position:absolute;
+width:28.5%;
+height:95%;
+border-radius: 5px;
+left: 7.5%;
+top:2.5%;
+border: 2px;
+border-color: black;
+border-style: solid;
+}
+.container-2{
+  position:absolute;
+  width:28.5%;
+  height:95%;
+  border-radius: 5px;
+  left: 38.3%;
+  top:2.5%;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+
+}
+.container-3{
+  position:absolute;
+  width:28.5%;
+  height:95%;
+  border-radius: 5px;
+  left: 69.1%;
+  top:2.5%;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+}
