@@ -45,3 +45,13 @@ border-style: solid;
   border-color: black;
   border-style: solid;
 }
+.chart-time{
+  position:absolute;
+  top:27%;
+}
+.time-button{
+  margin:22px;
+  border-radius:5px;
+  outline: none;
+  outline-color: none;
+}

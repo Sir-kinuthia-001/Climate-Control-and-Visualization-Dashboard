@@ -2,8 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
     <title>Hydro Int</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    .chart-js{
+      width: 100%;
+      height:30%;
+      left: 38.3%;
+      top:2.5%;
+      border: 2px;
+            }
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   </head>
   <body>
     <nav>
@@ -15,8 +25,45 @@
 
     </div>
     <div class="container-2">
+      <div class="chart-js">
+        <canvas id="production-charts">
+        </canvas>
+      </div>
+      <div class="Chart-time">
+        <button class="time-button" type="button" name="button">H</button>
+        <button class="time-button" type="button" name="button">D</button>
+        <button class="time-button" type="button" name="button">W</button>
+        <button class="time-button" type="button" name="button">M</button>
+        <button class="time-button" type="button" name="button">Y</button>
+      </div>
+          </div>
+          <script>
+            var ct = document.getElementById('production-charts').getContext('2d');
+            var chart = new Chart(ct,{
+              //the type of chart you want to create
+              type:'line',
+              //the data for our dataset
+              data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+              label: 'Trends',
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 99, 132)',
 
-    </div>
+              data:[9, 10, 95, -95, 95, 0, -5]
+          }]
+      },
+
+      // Configuration options go here
+      options: {
+        responsive: true,
+        title: {
+          display: false,
+          }
+      }
+            });
+          </script>
+
     <div class="container-3">
 
     </div>
