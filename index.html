@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
     <!--require meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,7 +73,23 @@
           </script>
 
     <div class="container-3">
+      <input type="text" id="ADD" name="" value="">
+      <button onclick="addfunction()" type="button" name="button">add element</button>
 
+        <div class="container-3-element">
+          <h1 id="element"></h1>
+          </div>
+
+      <script>
+      //document.getElementById("ADD").addEventListener("click", addfunction);
+
+        function addfunction(){
+        var x =
+         document.getElementById("ADD").value;
+
+        document.getElementById("element").innerHTML = x;
+      }
+      </script>
     </div>
 
   </body>

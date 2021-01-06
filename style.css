@@ -61,3 +61,15 @@ border-style: solid;
   font-style: normal;
   font-family: "Times New Roman", times, serif;
 }
+.container-3-element{
+  position:absolute;
+  top: 20%;
+  display: block;
+  height: 100px;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: 5%;
+  background-color: #5199FF;
+  
+
+}
