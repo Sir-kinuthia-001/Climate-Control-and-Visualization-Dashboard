@@ -50,8 +50,14 @@ border-style: solid;
   top:27%;
 }
 .time-button{
-  margin:22px;
+  margin:18px;
+  width:30px;
   border-radius:5px;
   outline: none;
   outline-color: none;
+  border:none;
+  background-color: #5199FF;
+  color:#fff;
+  font-style: normal;
+  font-family: "Times New Roman", times, serif;
 }
