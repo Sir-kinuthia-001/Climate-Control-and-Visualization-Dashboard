@@ -50,7 +50,7 @@ border-style: solid;
   top:27%;
 }
 .time-button{
-  margin:18px;
+  margin:25px;
   width:30px;
   border-radius:5px;
   outline: none;
@@ -70,6 +70,17 @@ border-style: solid;
   border-radius: 10px;
   margin-left: 5%;
   background-color: #5199FF;
-  
-
+}
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+}
+.market-ribbon{
+  height: 50px;
+  width: 100%;
+  background-color:green;
 }
