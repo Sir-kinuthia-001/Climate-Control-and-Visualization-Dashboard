@@ -1,5 +1,7 @@
-body{
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300%display=swap');
+:root{
+  --primary-color:#955df4;
+  --secondary-color:#ff816c;
 }
 nav{
 position:absolute;
@@ -7,9 +9,12 @@ width: 5%;
 top:2.5%;
 height:95%;
 border-radius:5px;
-border: 2px;
+/*border: 2px;
 border-color: black;
-border-style: solid;
+border-style: solid;*/
+-webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .container-1{
 position:absolute;
@@ -18,32 +23,26 @@ height:95%;
 border-radius: 5px;
 left: 7.5%;
 top:2.5%;
-border: 2px;
+/*border: 2px;
 border-color: black;
-border-style: solid;
+border-style: solid;*/
+-webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .container-2{
   position:absolute;
-  width:28.5%;
+  width:60%;
   height:95%;
   border-radius: 5px;
   left: 38.3%;
   top:2.5%;
-  border: 2px;
+  /*border: 2px;
   border-color: black;
-  border-style: solid;
-
-}
-.container-3{
-  position:absolute;
-  width:28.5%;
-  height:95%;
-  border-radius: 5px;
-  left: 69.1%;
-  top:2.5%;
-  border: 2px;
-  border-color: black;
-  border-style: solid;
+  border-style: solid;*/
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .chart-time{
   position:absolute;
