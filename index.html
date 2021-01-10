@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
     <!--require meta tags-->
     <meta charset="utf-8">
@@ -17,36 +16,45 @@
   </head>
   <body>
     <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button><br>
-    <button class="tablinks" onclick="openCity(event, 'Profile')">Profile</button><br>
-    <button class="tablinks" onclick="openCity(event, 'msgs')">Business</button><br>
+    <button class="tablinks" onclick="opentab(event, 'Home')" id="defaultOpen">Home</button><br>
+    <button class="tablinks" onclick="opentab(event, 'Profile')">Profile</button><br>
+    <button class="tablinks" onclick="opentab(event, 'Business')">Business</button><br>
   </div>
 
   <div id="Home" class="tabcontent">
     <div class="container-1">
       <h1>markets</h1>
-      <div class="market-ribbon">
-        <h5>cabbage</h5>
-      </div>
     </div>
     <div class="container-2">
       <h1>climate Tracking</h1>
-      <div class="chart-js">
+        <div class="chart-js">
         <canvas id="production-charts"></canvas>
-</div>
-</div>
-
+          </div>
+        </div>
+      </div>
 <div id="Profile" class="tabcontent">
-
+  <div class="profile-container">
+    <h2>cdc</h2>
+  </div>
 </div>
-
 <div id="Business" class="tabcontent">
-  
+  <div class="Business-container">
+  <div class="salut">
+    <h1>{{}},{{Name}}</h1>
+  </div>
+  <div class="calender">
+
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar">
+
+    </div>
+  </div>
+  <div class="chats-container">
+
+  </div>
 </div>
-
-
-  <!---
-      <div class="Chart-time">
+  <!--<div class="Chart-time">
         <button class="time-button" type="button" name="button">H</button>
         <button class="time-button" type="button" name="button">D</button>
         <button class="time-button" type="button" name="button">W</button>
@@ -70,7 +78,6 @@
               data:[9, 10, 95, -95, 95, 0, -5]
           }]
       },
-
       // Configuration options go here
       options: {
         responsive: true,
@@ -78,11 +85,10 @@
           display: false,
           }
       }
-            });
-          </script>-->
-    </div>
+          });
+      </script>-->
     <script>
-    function openCity(evt, cityName) {
+    function opentab(evt, cityName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -95,6 +101,8 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
     </script>
   </body>
 </html>
