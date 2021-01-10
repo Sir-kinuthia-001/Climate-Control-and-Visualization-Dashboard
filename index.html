@@ -16,12 +16,13 @@
     <script type="text/javascript"src="main.js"></script>
   </head>
   <body>
-    <nav>
-    <div class="home">
-      <a href="#profile">profile</a>
-      <div id="app"></div>
-    </div>
-    </nav>
+    <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button><br>
+    <button class="tablinks" onclick="openCity(event, 'Profile')">Profile</button><br>
+    <button class="tablinks" onclick="openCity(event, 'msgs')">Business</button><br>
+  </div>
+
+  <div id="Home" class="tabcontent">
     <div class="container-1">
       <h1>markets</h1>
       <div class="market-ribbon">
@@ -32,7 +33,19 @@
       <h1>climate Tracking</h1>
       <div class="chart-js">
         <canvas id="production-charts"></canvas>
-</div><!---
+</div>
+</div>
+
+<div id="Profile" class="tabcontent">
+
+</div>
+
+<div id="Business" class="tabcontent">
+  
+</div>
+
+
+  <!---
       <div class="Chart-time">
         <button class="time-button" type="button" name="button">H</button>
         <button class="time-button" type="button" name="button">D</button>
@@ -40,7 +53,7 @@
         <button class="time-button" type="button" name="button">M</button>
         <button class="time-button" type="button" name="button">Y</button>
       </div>
--->
+
           <script>
             var ct = document.getElementById('production-charts').getContext('2d');
             var chart = new Chart(ct,{
@@ -66,8 +79,22 @@
           }
       }
             });
-          </script>
+          </script>-->
     </div>
-
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
   </body>
 </html>

@@ -3,9 +3,19 @@
   --primary-color:#955df4;
   --secondary-color:#ff816c;
 }
-nav{
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.tab{
 position:absolute;
-width: 5%;
+width: 6%;
 top:2.5%;
 height:95%;
 border-radius:5px;
@@ -15,6 +25,15 @@ border-style: solid;*/
 -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
 -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
 box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+}
+.tab button{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 .container-1{
 position:absolute;
