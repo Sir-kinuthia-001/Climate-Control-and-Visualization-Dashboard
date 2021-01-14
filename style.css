@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300%display=swap');
 :root{
-  --primary-color:#955df4;
-  --secondary-color:#ff816c;
+  /*--primary-color:#955df4;
+  --secondary-color:#ff816c;*/
 }
 * {box-sizing: border-box}
 body {font-family: "Lato", sans-serif;}
@@ -29,10 +29,11 @@ border-style: solid;*/
 box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .tab button{
-  background-color: inherit;
+  position: relative;
+  left:12.5%;
   width:75%;
   height:30px;
-  margin-top:30px;
+  margin-top:50px;
   outline: none;
   cursor: pointer;
   transition: 0.3s;
@@ -110,8 +111,8 @@ box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 .salut{
   position:absolute;
   top:5%;
-  left:0;
-  width: 60%;
+  left:5%;
+  width: 30%;
   height:100px;
   border: 1px;
   border-style: solid;
@@ -120,17 +121,45 @@ box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .Business-container{
   position:absolute;
-  left:7%;
-  width: 92%;
+  left:8%;
+  width: 90%;
   height: 95%;
-  border: 1px;
-  border-style: solid;
-  border-color:#000;
   border-radius:5px;
-  background-color:none;
+  background-color:#F2F8FD;
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
-.progresss-bar{
-background-color: none;
+.Business-bar{
+position: absolute;
+top: 25%;
+left: 5%;
+width:40%;
+height: 50px;
+background-color: #fff;
+border: 1px;
+/*border-style: solid;
+border-color:#000;*/
+border-radius:5px;
+}
+.Business-container-content{
+position: absolute;
+top: 35%;
+left: 5%;
+display: block;
+border: 1px;
+border-style: solid;
+border-color:#000;
+border-radius:5px;
+}
+.data{
+  position:absolute;
+  top: 5%;
+  left:70%;
+  height: 250px;
+  width: 250px;
+  background-color: #fff;
+  color:green;
 }
 .p-btn{
   width:50px;
