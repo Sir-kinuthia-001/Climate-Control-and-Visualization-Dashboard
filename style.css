@@ -198,3 +198,12 @@ border-radius:5px;
   background-color: #fff;
   border-radius:5px;
 }
+.profile-pic{
+  position: absolute;
+  top:0;
+  right:0;
+  height:50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #000;
+}
