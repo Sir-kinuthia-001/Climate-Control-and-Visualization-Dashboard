@@ -102,13 +102,17 @@ box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
   background-color:green;
 }
 .chart-js{
-  width: 40%;
+  position:absolute;
+  width: 80%;
   height:30%;
-  left: 38.3%;
+  left: 10%;
   top:2.5%;
   border: 2px;
   border-color:#000;
-  border-style: solid;
+  border-style: solid
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .salut{
   position:absolute;
