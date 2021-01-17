@@ -12,6 +12,223 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="text/javascript"src="main.js"></script>
   </head>
+  <style media="screen">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300%display=swap');
+  :root{
+    /*--primary-color:#955df4;
+    --secondary-color:#ff816c;*/
+  }
+  * {box-sizing: border-box}
+  body {font-family: "Lato", sans-serif;}
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .tab{
+  position:absolute;
+  width: 6%;
+  top:2.5%;
+  height:95%;
+  border-radius:5px;
+  /*border: 2px;
+  border-color: black;
+  border-style: solid;*/
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  }
+  .tab button{
+    position: relative;
+    left:12.5%;
+    width:75%;
+    height:30px;
+    margin-top:50px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  .tab button.active {
+    background-color: #ccc;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  .container-1{
+  position:absolute;
+  width:28.5%;
+  height:95%;
+  border-radius: 5px;
+  left: 7.5%;
+  top:2.5%;
+  /*border: 2px;
+  border-color: black;
+  border-style: solid;*/
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  }
+  .container-2{
+    position:absolute;
+    width:60%;
+    height:95%;
+    border-radius: 5px;
+    left: 38.3%;
+    top:2.5%;
+    /*border: 2px;
+    border-color: black;
+    border-style: solid;*/
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  }
+  /*.chart-time{
+    height:100%;
+    position:absolute;
+    top:90%;
+  }*/
+  .time-button{
+    margin:25px;
+    width:30px;
+    border-radius:5px;
+    outline: none;
+    outline-color: none;
+    border:none;
+    background-color: #5199FF;
+    color:#fff;
+    font-style: normal;
+    font-family: "Times New Roman", times, serif;
+  }
+  .market-ribbon{
+    height: 50px;
+    width: 100%;
+    background-color:green;
+  }
+  .chart-js{
+    position:absolute;
+    width: 80%;
+    height:30%;
+    left: 10%;
+    top:2.5%;
+    border: 2px;
+    border-color:#000;
+    border-style: solid
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  }
+  .salut{
+    position:absolute;
+    top:5%;
+    left:5%;
+    width: 30%;
+    height:100px;
+    border: 1px;
+    border-style: solid;
+    border-color:#000;
+    border-radius:5px;
+  }
+  .Business-container{
+    position:absolute;
+    left:8%;
+    width: 90%;
+    height: 95%;
+    border-radius:5px;
+    background-color:#F2F8FD;
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  }
+  .Business-bar{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width:90%;
+  height: 50px;
+  border: 1px;
+  border-style: solid;
+  border-color:#000;
+  border-radius:5px;
+  }
+  .progress-bar{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width:20%;
+    height: 50px;
+    background-color: #000;
+    border: 1px;
+    border-style: solid;
+    border-color:#000;
+    border-radius:5px;
+  }
+  .active-accounts{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width:20%;
+    height: 50px;
+    background-color: #000;
+    border: 1px;
+    border-style: solid;
+    border-color:#000;
+    border-radius:5px;
+  }
+  .Business-container-content{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  display: block;
+  border: 1px;
+  border-style: solid;
+  border-color:#000;
+  border-radius:5px;
+  }
+  .data{
+    position:absolute;
+    top: 5%;
+    left:70%;
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    color:green;
+  }
+  .p-btn{
+    width:50px;
+    height:30px;
+    background-color:none;
+  }
+  .calender{
+    position:relative;
+    height:30px;
+    width: 100px;
+    left: 5%;
+    top:30%;
+    background-color: #fff;
+    border-radius:5px;
+  }
+  .profile-pic{
+    position: absolute;
+    top:0;
+    right:0;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+  </style>
   <body>
     <div class="tab">
     <button class="tablinks" onclick="opentab(event, 'Home')"id="defaultOpen" ><span style="font-size:20px;">H</span></button><br>
@@ -21,8 +238,12 @@
   </div>
 
   <div id="Home" class="tabcontent">
-    <div class="container-1">
+    <div class="container-1">k
       <h1>m</h1>
+      <div class="">
+
+      </div>
+
     </div>
     <div class="container-2">
         <div class="temp-chart-js">
