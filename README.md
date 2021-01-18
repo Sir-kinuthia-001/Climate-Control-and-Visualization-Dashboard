@@ -3,4 +3,5 @@
  Intergrating IOT to farming.
 #dependancy
 #node
-#bootstap
+npm install node
+npm install nodemon
