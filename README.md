@@ -5,3 +5,5 @@
 #node
 npm install node
 npm install nodemon
+
+npm install firebaseio
