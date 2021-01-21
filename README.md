@@ -7,3 +7,4 @@ npm install node
 npm install nodemon
 
 npm install firebaseio
+npm install brain.js
