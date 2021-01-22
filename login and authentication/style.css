@@ -6,6 +6,7 @@ nav{
   height:50px;
   position: absolute;
   top: 0;
+  left: 0;
   background-color: blue;
 }
 .nav-btn{
@@ -20,15 +21,18 @@ nav{
 }
 .nav-Login{
   position: absolute;
-  top: 10px;
+  top: 5px;
   left:90%;
   width:100px;
-  height:25px;
+  height:40px;
   border-radius:5px;
   color: white;
   background-color:blue;
   outline: none;
   border: none;
+}
+.nav-Login:hover{
+  background-color:grey;
 }
 .navbar{
   position: absolute;
@@ -50,7 +54,7 @@ nav{
 }
 .info-btn{
   width:120px;
-  height:25px;
+  height:40px;
   border-radius:5px;
   margin-left: 2%;
   color: white;
@@ -66,4 +70,15 @@ nav{
   top:90%;
   left: 10%;
   width: 80%;
+  font-weight:bolder;
+}
+.infographic-card{
+  position: absolute;
+  left: 53%;
+  top: 10%;
+  background-color:green;
+  border-radius: 20px;
+  color:#fff;
+  height:80%;
+  width:45%;
 }
