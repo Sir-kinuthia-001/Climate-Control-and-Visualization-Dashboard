@@ -27,7 +27,7 @@ nav{
   position: absolute;
   top: 5px;
   left:90%;
-  width:100px;
+  width:110px;
   height:40px;
   border-radius:5px;
   color: white;
@@ -88,6 +88,8 @@ nav{
   left: 10%;
   width: 80%;
   font-weight:bolder;
+  color: black;
+
 }
 .infographic-card{
   position: absolute;
@@ -108,5 +110,16 @@ img{
   top: 0;
   width:100%;
   height:100%;
+}
+.angle{
+  position: absolute;
+  top: 5px;
+  right:2.5%;
+}
+.nav-login-btn{
+  height:100%;
+  width:100%;
+  position: absolute;
+  font-size: 20px;
 
 }
