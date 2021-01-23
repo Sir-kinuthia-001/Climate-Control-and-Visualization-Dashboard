@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  background-color: #6C63FF;
 }
 nav{
   width: 100%;
@@ -7,7 +8,7 @@ nav{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: none;
   -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
@@ -17,8 +18,8 @@ nav{
   height:25px;
   border-radius:5px;
   margin-left: 2%;
-  color: white;
-  background-color:black;
+  color: #6C63FF;
+  background-color:none;
   outline: none;
   border: none;
 }
@@ -30,7 +31,7 @@ nav{
   height:40px;
   border-radius:5px;
   color: white;
-  background-color:black;
+  background-color:none;
   outline: none;
   border: none;
 }
@@ -48,7 +49,7 @@ nav{
 }
 .nav-btn:hover{
   background-color:#fff;
-  color: black;
+  color: none;
   -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
@@ -59,7 +60,7 @@ nav{
   position: absolute;
   top:20%;
   left:2%;
-  background-color:black;
+  background-color:none;
   border-radius:20px;
   -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
@@ -71,7 +72,7 @@ nav{
   border-radius:5px;
   margin-left: 2%;
   color: white;
-  background-color:black;
+  background-color:none;
   outline: none;
   border: none;
 }
@@ -92,7 +93,7 @@ nav{
   position: absolute;
   left: 53%;
   top: 10%;
-  background-color:black;
+  background-color:none;
   border-radius: 20px;
   color:#fff;
   height:80%;
@@ -100,4 +101,12 @@ nav{
   -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+}
+img{
+  position: absolute;
+  left:0;
+  top: 0;
+  width:100%;
+  height:100%;
+
 }
