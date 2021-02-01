@@ -228,12 +228,16 @@
     border-radius: 50%;
     background-color: #000;
   }
+  .date-time{
+    font-size:10px;
+
+  }
   </style>
   <body>
     <div class="tab">
-    <button class="tablinks" onclick="opentab(event, 'Home')"id="defaultOpen" ><span style="font-size:20px;">H</span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Home')" ><span style="font-size:20px;">H</span></button><br>
     <button class="tablinks" onclick="opentab(event, 'Profile')"><span style="font-size:20px;">P<span></button><br>
-    <button class="tablinks" onclick="opentab(event, 'Business')"><span style="font-size:20px;">B<span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Business')"id="defaultOpen"><span style="font-size:20px;">B<span></button><br>
     <button class="tablinks" onclick="opentab(event, 'Settings')"><span style="font-size:20px;">S<span></button>
   </div>
 
@@ -268,6 +272,13 @@
     </div>
   <div class="salut">
     <h1>Hello, dennis</h1>
+  </div>
+  <div class="date-time">
+    <h1 id="date"></h1>
+    <script>
+      var d = new Date();
+      document.getElementById("date").innerHTML = d;
+    </script>
   </div>
   <div class="Business-bar">
     <div class="progress-bar">
