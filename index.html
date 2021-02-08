@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -7,8 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hydro Int</title>
-
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="text/javascript"src="main.js"></script>
   </head>
@@ -129,6 +126,15 @@
     -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
   }
+  .temp-chart-js{
+    height:40%;
+    width:90%;
+    background-color:#E5F0FF;
+    position:absolute;
+    left:5%;
+    top:10px;
+    border-radius: 5px;
+  }
   .salut{
     position:absolute;
     top:5%;
@@ -146,7 +152,7 @@
     width: 90%;
     height: 95%;
     border-radius:5px;
-    background-color:#F2F8FD;
+    background-color:#fff;
     -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
@@ -168,7 +174,7 @@
     left: 5%;
     width:20%;
     height: 50px;
-    background-color: #000;
+    background-color:#000;
     border: 1px;
     border-style: solid;
     border-color:#000;
@@ -232,40 +238,102 @@
     font-size:10px;
 
   }
+  .humid-chart-js{
+    height:20%;
+    width: 40%;
+    background-color:#E4FFF9;
+    position:absolute;
+    left:5%;
+    top:45%;
+    border-radius:5px;
+  }
+  .lumin-chart-js{
+    height:20%;
+    width: 40%;
+    background-color:#FBE7B5;
+    position:absolute;
+    left:55%;
+    top:45%;
+    border-radius:5px;
+  }
+  .water-charts-js{
+    height:25%;
+    width: 80%;
+    background-color:#F0F6F4;
+    position:absolute;
+    left:10%;
+    top:70%;
+    border-radius:5px;
+  }
+  .product{
+    height:100px;
+    width:100%;
+    background-color: #000;
+  }
+  .mylist{
+    height:100px;
+    width:95%;
+    position:absolute;
+    left:2.5%;
+    border-radius: 5px;
+    background-color: #000;
+    margin-top:10px;
+    display: block;
+  }
+
   </style>
   <body>
     <div class="tab">
-    <button class="tablinks" onclick="opentab(event, 'Home')" ><span style="font-size:20px;">H</span></button><br>
-    <button class="tablinks" onclick="opentab(event, 'Profile')"><span style="font-size:20px;">P<span></button><br>
-    <button class="tablinks" onclick="opentab(event, 'Business')"id="defaultOpen"><span style="font-size:20px;">B<span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Home')" ><span style="font-size:20px;"id="defaultOpen">H</span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Profile')"><span style="font-size:20px;">P</span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Business')"><span style="font-size:20px;">B</span></button><br>
     <button class="tablinks" onclick="opentab(event, 'Settings')"><span style="font-size:20px;">S<span></button>
   </div>
 
   <div id="Home" class="tabcontent">
-    <div class="container-1">k
-      <h1>m</h1>
-      <div class="">
 
-      </div>
+    <div class="container-1">
+        <div class="product">
+          <center>My List</center>
+          </div>
+          <div class="mylist">
 
-    </div>
+          </div>
+          <br>
+          <div class="mylist">
+
+          </div>
+          <div class="mylist">
+
+            </div>
+          <div class="mylist">
+
+            </div>
+        </div>
+
     <div class="container-2">
         <div class="temp-chart-js">
-          <h1>temp Trends</h1>
-        <canvas id="temp-charts"></canvas>
+          <center><h1 style="font-size:10px;">temperature</h1><center>
+      </div>
+      <div class="humid-chart-js">
+        <center><h1 style="font-size:10px;">humidity</h1></center>
       </div>
       <div class="lumin-chart-js">
-        <canvas id="lumin-charts" width="300" height="300"></canvas>
-
-      </div>
+        <center><h1 style="font-size:10px;">humidity</h1></center>
+        </div>
+        <div class="water-charts-js">
+          <center><h1 style="font-size:10px;">Water levels</h1></center>
         </div>
       </div>
+    </div>
+
 <div id="Profile" class="tabcontent">
   <div class="profile-container">
       <center>Profile container</center>
   </div>
-</div>
-<div id="Business" class="tabcontent">
+  </div>
+
+  <div id="Business" class="tabcontent">
   <div class="Business-container">
     <div class="profile-pic">
       <img src="" alt="pic">
@@ -273,7 +341,7 @@
   <div class="salut">
     <h1>Hello, dennis</h1>
   </div>
-  <div class="date-time">
+    <div class="date-time">
     <h1 id="date"></h1>
     <script>
       var d = new Date();
@@ -282,24 +350,27 @@
   </div>
   <div class="Business-bar">
     <div class="progress-bar">
-      <center><center>
+
   </div>
   <div class="active-accounts">
-    <h2>fghjk</h2>
+
   </div>
-</div>
-<div class="calender">
-<h1><span style="font-size:20px">calender</span></h1>
-</div>
-<div class="Business-container-content">
+  </div>
+
+  <div class="calender">
+  <h1><span style="font-size:20px">calender</span></h1>
+  </div>
+
+  <div class="Business-container-content">
   <div class="data">
     <h1><span style="font-size:20px">datas</span></h1>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 <div id ="settings" class="tabcontent">
   <center>Settings<center>
-</div>
+    </div>
   <!--<div class="Chart-time">
         <button class="time-button" type="button" name="button">H</button>
         <button class="time-button" type="button" name="button">D</button>
