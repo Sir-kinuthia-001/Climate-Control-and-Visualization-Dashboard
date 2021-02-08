@@ -2,5 +2,12 @@
   height:100px;
   width:100%;
   background-color: #000;
-  margin-top:10px;
+
+}
+.product{
+  height:50%;
+  width:100px;
+  background-color: #000;
+  position: absolute;
+  top:0px;
 }
