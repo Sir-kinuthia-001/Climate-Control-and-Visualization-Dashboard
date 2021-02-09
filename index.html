@@ -286,7 +286,12 @@
     background-color: #8CBA51;
     display: inline-block;
     float: right;
-
+  }
+  .temp-chart{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top: 5%;
   }
   </style>
   <body>
@@ -302,12 +307,12 @@
     <div class="container-1">
 
           <div class="mylist">
-  <center>My List</center>
+              <center>My List</center>
           </div>
           <br>
           <div class="mylist">
             <div class="product" ><h1 style="font-size:13px;">Kale</h1></div>
-             <div class="exp-gross"><h1 style="font-size:13px;">gross</h1></div>
+             <div class="exp-gross"><h1 style="font-size:13px;">gross$</h1></div>
              <div class="rate"><h1 style="font-size:13px;">rate<h1></div>
           </div>
           <div class="mylist">
@@ -324,6 +329,7 @@
     <div class="container-2">
         <div class="temp-chart-js">
           <center><h1 style="font-size:10px;">temperature</h1><center>
+            <canvas class="temp-chart" id="production-charts"></canvas>
       </div>
       <div class="humid-chart-js">
         <center><h1 style="font-size:10px;">humidity</h1></center>
@@ -381,14 +387,6 @@
 <div id ="settings" class="tabcontent">
   <center>Settings<center>
     </div>
-  <!--<div class="Chart-time">
-        <button class="time-button" type="button" name="button">H</button>
-        <button class="time-button" type="button" name="button">D</button>
-        <button class="time-button" type="button" name="button">W</button>
-        <button class="time-button" type="button" name="button">M</button>
-        <button class="time-button" type="button" name="button">Y</button>
-      </div>
-
           <script>
             var ct = document.getElementById('production-charts').getContext('2d');
             var chart = new Chart(ct,{
@@ -402,7 +400,7 @@
               backgroundColor: 'rgb(255, 99, 132)',
               borderColor: 'rgb(255, 99, 132)',
 
-              data:[9, 10, 95, -95, 95, 0, -5]
+              data:[13, 10, 19, 15, 19, 10, 15]
           }]
       },
       // Configuration options go here
@@ -413,7 +411,7 @@
           }
       }
           });
-      </script>-->
+      </script>
     <script>
     function opentab(evt, cityName) {
       var i, tabcontent, tablinks;
