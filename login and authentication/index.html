@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title><🌱></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
@@ -16,9 +16,9 @@
       </div>
       <div class="navbar">
       <button class="nav-btn" name="button"><a href="#products">Products</a></button>
-      <button class="nav-btn" name="button"><a href="for-devs">For Devs</a></button>
-      <button class="nav-btn" name="button"><a href="Company">Company</a></button>
-      <button class="nav-btn" name="button"><a href="pricing">Pricing</a></button>
+      <button class="nav-btn" name="button"><a href="#for-devs">For Devs</a></button>
+      <button class="nav-btn" name="button"><a href="#Company">Company</a></button>
+      <button class="nav-btn" name="button"><a href="#pricing">Pricing</a></button>
     </div>
     <div class="nav-Login">
       <button class="nav-login-btn"name="button">Login</button>
@@ -28,11 +28,11 @@
     </div>
     </nav>
   </header>
-  <main>
+  <div class="main">
     <div class="start">
 
       <div class="information-card">
-        <h1 style="font-size:90px; color:#fff; position:absolute; top:0">The platform for autonomous farming</h1>
+        <h1 style="font-size:80px; color:#fff; position:absolute; top:0">The Platform For <span class="txtstyle">Urban & Autonomous</span> Farming</h1>
         <div class="info-card-btn">
           <button class="info-btn" name="button">Start now</button>
         <button class="info-btn" name="button">Contact Details</button>
@@ -78,10 +78,22 @@
            occaecat cupidatat non proident, sunt in culpa qui officia
            deserunt mollit anim id est laborum.</h1>
       </div>
-  </main>
+  </div>
   <footer>
   </footer>
   <script src="main.js"></script>
+  <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
