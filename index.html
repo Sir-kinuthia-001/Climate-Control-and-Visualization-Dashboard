@@ -293,6 +293,12 @@
     position:absolute;
     top: 5%;
   }
+  .tcj{
+    height: 100px;
+    width:600px;
+    position:absolute;
+    top: 5%;
+  }
   </style>
   <body>
     <div class="tab">
@@ -327,10 +333,13 @@
         </div>
 
     <div class="container-2">
+
         <div class="temp-chart-js">
           <center><h1 style="font-size:10px;">temperature</h1><center>
-            <canvas class="temp-chart" id="production-charts"></canvas>
-      </div>
+            <div class="tcj">
+              <canvas class="temp-chart" id="production-charts"></canvas>
+            </div>
+    </div>
       <div class="humid-chart-js">
         <center><h1 style="font-size:10px;">humidity</h1></center>
       </div>
@@ -397,7 +406,7 @@
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
           datasets: [{
               label: 'Trends',
-              backgroundColor: 'rgb(255, 99, 132)',
+              ///backgroundColor: 'rgb(255, 99, 132)',
               borderColor: 'rgb(255, 99, 132)',
 
               data:[13, 10, 19, 15, 19, 10, 15]
