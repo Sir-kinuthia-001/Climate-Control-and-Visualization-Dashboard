@@ -11,3 +11,14 @@
   position: absolute;
   top:0px;
 }
+.exp-gross{
+  height:50%;
+  width:100px;
+  background-color: #000;
+  position:relative;
+  left:90%;
+}
+.temp-chart{
+  height:100%;
+  width:100%;
+}
