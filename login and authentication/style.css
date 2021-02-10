@@ -18,10 +18,7 @@ html{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ACB6E5;
-  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+
 }
 .nav-btn{
   width:100px;
@@ -33,18 +30,7 @@ html{
   background-color:#ACB6E5;
   outline: none;
   border: none;
-}
-.nav-Login{
-  margin-top: 6px;
-  position: absolute;
-  left:90%;
-  width:110px;
-  height:40px;
-  border-radius:5px;
-  color: #fff;
-  background-color:#ACB6E5;
-  outline: none;
-  border: none;
+
 }
 .nav-Login:hover{
   background-color:;
@@ -53,11 +39,19 @@ html{
   box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
 }
 .navbar{
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10%;
   width: 80%;
 }
+#navbar {
+  transition: top 0.3s;
+}
+
+#navbar a {
+  display: block;
+}
+
 .nav-btn:hover{
   background-color:;
   color: none;
@@ -68,7 +62,7 @@ html{
 .information-card{
   height:60%;
   width:50%;
-  position: absolute;
+  position: relative;
   top:20%;
   left:2%;
   background-color:none;
@@ -102,7 +96,7 @@ html{
 
 }
 .infographic-card{
-  position: absolute;
+  position:absolute;
   left: 53%;
   top: 10%;
   background-color:none;
@@ -126,15 +120,27 @@ img{
   margin-top: 6px;
   right:2.5%;
 }
+.nav-login-btn:hover{
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+}
 .nav-login-btn{
   height:100%;
-  width:100%;
-  position: absolute;
+  width:120px;
   font-size: 20px;
+  float:right;
+
+  height:40px;
+  border-radius:5px;
+  color: #fff;
+  background-color:#ACB6E5;
+  outline: none;
+  border: none;
 }
 .product, .Company, .pricing, .for-devs {
   width: 100%;
-  height:1000px;
+  height:800px;
   background-color: ;
 }
 .start{
@@ -152,21 +158,11 @@ height: 800px;
   transition: ease-in .5s all;
 
 }
-#navbar {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
+.devs{
+  position:relative;
+  top:10%;
+  margin:20px;
 }
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
+input[type=text]{
+  height: 30px;
 }
