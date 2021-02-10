@@ -15,6 +15,7 @@
       <div class="logo" id="logo">
       </div>
       <div class="navbar" id="navbar">
+      <button class="nav-btn" name="button"><a href="#Home">Home</a></button>
       <button class="nav-btn" name="button"><a href="#products">Products</a></button>
       <button class="nav-btn" name="button"><a href="#for-devs">For Devs</a></button>
       <button class="nav-btn" name="button"><a href="#Company">Company</a></button>
@@ -25,7 +26,7 @@
     </nav>
   </header>
   <div class="main">
-    <div class="start">
+    <div class="Home" id="Home">
 
       <div class="information-card">
         <h1 style="font-size:80px; color:#fff; position:absolute; top:0">The Platform For <span class="txtstyle">Urban & Autonomous</span> Farming</h1>
@@ -46,15 +47,37 @@
            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
            culpa qui officia deserunt mollit anim id est laborum.</h1>
       </div>
+
       <div class="for-devs" id="for-devs">
-        <form class="devs" action="index.html" method="post">
+        <div class="for">
+          <div class="contact-info">
+            <h1>contact informatio</h1>
+            <h1>Fill your contact information and our development team willcontact you within 24hrs</h1>
+          </div>
+        <form action="index.html" method="post">
           <h1 style="font-size:15px;">Contact us for Premium access</h1>
-          <input type="text" name="" value=""placeholder="First Name"><br>
+          <input type="text" name="" value=""placeholder="First Name">
           <input type="text" name="" value=""placeholder="Last Name"><br>
-          <input type="email" name="" value=""placeholder="example@email.com"><br>
-          <input type="phone" name="" value=""placeholder="">
+          <input type="email" name="" value=""placeholder="example@email.com">
+          <input type="phone" name="" value=""placeholder="Phone"><br>
+          <h1>what access do you need</h1>
+          <input type="checkbox" name="" value=""><label>API</label>
+          <input type="checkbox" name="" value=""><label>Others</label><br>
+          <h1 style="font-size:15px" >please specify</h1>
+          <input type="text" name="" value="">
+          <h1 style="font-size:15px" >what your primary field</h1>
+          <input type="checkbox" name="" value="">
+          <label for="">ICT</label>
+          <input type="checkbox" name="" value="">
+          <label for="">Engineering</label>
+          <input type="checkbox" name="" value="">
+          <label for="">Business</label><br>
+
+          <label for="">Message</label><br>
+          <textarea name="" value=""placeholder="Write your message" style="width:40%"></textarea>
         </form>
       </div>
+    </div>
       <div class="Company" id="Company">
         <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit
           , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
