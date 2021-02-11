@@ -299,11 +299,42 @@
     position:absolute;
     top: 5%;
   }
+  .contact-list{
+  height:95%;
+  width:20%;
+  position:absolute;
+  left:7%;
+  top: 2.5%;
+  background-color: blue;
+  border-radius: 5px;
+  }
+  .contact-list-profiles{
+    height: 95%;
+    width:20%;
+    position:absolute;
+    top: 2.5%;
+    left:80%;
+    background-color: blue;
+    border-radius: 5px;
+  }
+  .messages{
+    height: 95%;
+    width:50%;
+    position:absolute;
+    top: 2.5%;
+    left:28.5%;
+    background-color: blue;
+    border-radius: 5px;
+  }
+  .mode-bar{
+
+  }
+
   </style>
   <body>
     <div class="tab">
-    <button class="tablinks" onclick="opentab(event, 'Home')" ><span style="font-size:20px;"id="defaultOpen">H</span></button><br>
-    <button class="tablinks" onclick="opentab(event, 'Profile')"><span style="font-size:20px;">P</span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Home')" ><span style="font-size:20px;">H</span></button><br>
+    <button class="tablinks" onclick="opentab(event, 'Profile')"><span style="font-size:20px;"id="defaultOpen">M</span></button><br>
     <button class="tablinks" onclick="opentab(event, 'Business')"><span style="font-size:20px;">B</span></button><br>
     <button class="tablinks" onclick="opentab(event, 'Settings')"><span style="font-size:20px;">S<span></button>
   </div>
@@ -354,7 +385,18 @@
 
 <div id="Profile" class="tabcontent">
   <div class="profile-container">
-      <center>Profile container</center>
+
+      <div class="contact-list">
+        <h1>list</h1>
+      </div>
+      <div class="messages">
+        <div class="mode-bar">
+          <h1>call/video</h1>
+        </div>
+      </div>
+      <div class="contact-list-profiles">
+        <h1>profiles</h1>
+      </div>
   </div>
   </div>
 

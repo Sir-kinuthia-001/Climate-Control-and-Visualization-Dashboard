@@ -1,5 +1,5 @@
 {
-  "name": "climate-controle-and-visualization-dashboard",
+  "name": "chat-app",
   "version": "1.0.0",
   "description": "Climate control system",
   "main": "index.js",
@@ -24,5 +24,6 @@
     "node-dweetio": "0.0.11",
     "nodemon": "^2.0.7",
     "vivid-icons": "^1.0.10"
-  }
+  },
+  "devDependencies": {}
 }
