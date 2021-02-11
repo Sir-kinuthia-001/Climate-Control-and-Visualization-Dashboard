@@ -53,5 +53,25 @@ $form.on("submit", function(event){
     name:name
   });
   //show user messageform
-  var $messages = $(".messages")
-})
+  var $messages = $(".messages");
+  var $messages = $('<li class = "list-group-item"></li>');
+
+  var momentTimestamp = moment().format("h:MM a");
+  //$(:$message.append('<p>').text(message.text));
+  $message.append("<strong>" + + momentTimestamp + " " + name + "</strong>");
+  //$message.append("<p>" + $message1.val() + "</p>");
+  $message.append($("<p>", {
+     class: "mymessages",
+     text: $message1.val()
+   }));
+   $messages.append($message);
+   $message1.val('');
+   // manage autoscroll
+   var obj = $("ul.messages.list-group");
+   var offset = obj.offset();
+   var scrollLength = obj[0].scrollHeight;
+   //  offset.top += 20;
+   $("ul.messages.list-group").animate({
+     scrollTop: scrollLength - offset.top
+   });
+ });
